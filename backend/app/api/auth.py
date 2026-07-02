@@ -19,6 +19,7 @@ from app.auth.security import (
 from app.auth.auth import (
     create_access_token
 )
+from app.auth.dependencies import get_current_user
 
 router = APIRouter(
     prefix="/auth",
@@ -85,3 +86,8 @@ def login(
         "token_type": "bearer",
         "role": user.role
     }
+@router.get("/me")
+def get_me(
+        current_user=Depends(get_current_user)
+):
+    return current_user

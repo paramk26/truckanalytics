@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="authentication">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="authentication lock added to POST and GET of different methods">
+      <change afterPath="$PROJECT_DIR$/backend/app/api/dashboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/api/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/customer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/customer_rate.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/customer_rate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/delivery.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/delivery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/expense.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/expense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/invoice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/maintenance.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/maintenance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/payment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/api/tanker.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/tanker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/auth/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/auth/dependencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/auth/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/auth/security.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782960791682</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="authentication lock added to POST and GET of different methods">
+      <option name="closed" value="true" />
+      <created>1782998113585</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782998113586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="postgresql, sqlalchemy, all modules initialized for API" />
     <MESSAGE value="authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="authentication" />
+    <MESSAGE value="authentication lock added to POST and GET of different methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication lock added to POST and GET of different methods" />
   </component>
 </project>

@@ -16,7 +16,7 @@ from app.api.maintenance import router as maintenance_router
 from app.api.compliance import router as compliance_router
 from app.api.analytics import router as analytics_router
 from app.api.auth import router as auth_router
-
+from app.api.dashboard import router as dashboard_router
 
 Base.metadata.create_all(bind=engine)
 
@@ -38,6 +38,7 @@ app.include_router(
     analytics_router
 )
 app.include_router(auth_router)
+app.include_router(dashboard_router)
 
 print(app.routes)
 @app.get("/")
