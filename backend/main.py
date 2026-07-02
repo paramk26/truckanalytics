@@ -15,6 +15,7 @@ from app.api.payment import router as payment_router
 from app.api.maintenance import router as maintenance_router
 from app.api.compliance import router as compliance_router
 from app.api.analytics import router as analytics_router
+from app.api.auth import router as auth_router
 
 
 Base.metadata.create_all(bind=engine)
@@ -36,6 +37,7 @@ app.include_router(compliance_router)
 app.include_router(
     analytics_router
 )
+app.include_router(auth_router)
 
 print(app.routes)
 @app.get("/")

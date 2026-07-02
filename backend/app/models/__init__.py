@@ -7,3 +7,4 @@ from .expense import Expense
 from .invoice import Invoice
 from .payment import Payment
 from .maintenance import Maintenance
+from .user import User
