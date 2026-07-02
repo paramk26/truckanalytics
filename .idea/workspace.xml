@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/swsinvoice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/compliance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/customer_rate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/delivery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/employee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/expense.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/invoice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/maintenance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/payment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/tanker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/customer_rate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/delivery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/employee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/expense.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/invoice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/maintenance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/payment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/tanker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/customer_rate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/delivery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/employee.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/expense.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/invoice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/maintenance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/payment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/tanker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/requirments.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3Ful6xCujz06bRO938tyxhAb60A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.session.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/PycharmProjects/swsinvoice&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\PycharmProjects\swsinvoice\backend" />
+      <recent name="C:\Users\DELL\PycharmProjects\swsinvoice\backend\app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="" />
+      <created>1782932664187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782932664187</updated>
+    </task>
+    <servers />
+  </component>
+</project>
