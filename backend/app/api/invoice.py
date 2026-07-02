@@ -10,6 +10,8 @@ from app.schemas.invoice import (
     InvoiceResponse
 )
 
+from app.auth.dependencies import admin_required
+
 router = APIRouter(
     prefix="/invoices",
     tags=["Invoices"]
@@ -22,7 +24,8 @@ router = APIRouter(
 )
 def create_invoice(
     invoice: InvoiceCreate,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user=Depends(admin_required)
 ):
     db_invoice = Invoice(
         **invoice.model_dump()

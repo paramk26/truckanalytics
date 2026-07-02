@@ -7,6 +7,7 @@ from app.schemas.tanker import (
     TankerCreate,
     TankerResponse
 )
+from app.auth.dependencies import admin_required
 
 router = APIRouter(
     prefix="/tankers",
@@ -14,13 +15,11 @@ router = APIRouter(
 )
 
 
-@router.post(
-    "/",
-    response_model=TankerResponse
-)
+@router.post("/")
 def create_tanker(
-        tanker: TankerCreate,
-        db: Session = Depends(get_db)
+    tanker: TankerCreate,
+    db: Session = Depends(get_db),
+    current_user=Depends(admin_required)
 ):
     db_tanker = Tanker(
         **tanker.model_dump()

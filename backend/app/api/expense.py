@@ -9,6 +9,7 @@ from app.schemas.expense import (
     ExpenseCreate,
     ExpenseResponse
 )
+from app.auth.dependencies import admin_required
 
 router = APIRouter(
     prefix="/expenses",
@@ -22,7 +23,8 @@ router = APIRouter(
 )
 def create_expense(
         expense: ExpenseCreate,
-        db: Session = Depends(get_db)
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
 ):
     db_expense = Expense(
         **expense.model_dump()

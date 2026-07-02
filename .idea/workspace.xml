@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="postgresql, sqlalchemy, all modules initialized for API">
-      <change afterPath="$PROJECT_DIR$/backend/app/api/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/auth/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/auth/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas/user.py" afterDir="false" />
+    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="authentication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/customer_rate.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/customer_rate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/delivery.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/delivery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/expense.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/expense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/invoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/maintenance.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/maintenance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/payment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/tanker.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/tanker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/auth/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/auth/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/auth/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/auth/security.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +40,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "paramk26"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;paramk26&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/paramk26/truckanalytics.git",
-    "accountId": "62b7b892-6709-47cd-a667-0bb43cd00ac4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/paramk26/truckanalytics.git&quot;,
+    &quot;accountId&quot;: &quot;62b7b892-6709-47cd-a667-0bb43cd00ac4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -100,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782957942821</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="authentication">
+      <option name="closed" value="true" />
+      <created>1782960791682</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782960791682</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="postgresql, sqlalchemy, all modules initialized for API" />
-    <option name="LAST_COMMIT_MESSAGE" value="postgresql, sqlalchemy, all modules initialized for API" />
+    <MESSAGE value="authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication" />
   </component>
 </project>

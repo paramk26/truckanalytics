@@ -9,6 +9,7 @@ from app.schemas.customer_rate import (
     CustomerRateCreate,
     CustomerRateResponse
 )
+from app.auth.dependencies import admin_required
 
 router = APIRouter(
     prefix="/customer-rates",
@@ -40,7 +41,8 @@ def create_customer_rate(
     response_model=list[CustomerRateResponse]
 )
 def get_customer_rates(
-    db: Session = Depends(get_db)
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
 ):
     return db.query(
         CustomerRate

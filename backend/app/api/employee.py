@@ -9,20 +9,18 @@ from app.schemas.employee import (
     EmployeeCreate,
     EmployeeResponse
 )
-
+from app.auth.dependencies import admin_required
 router = APIRouter(
     prefix="/employees",
     tags=["Employees"]
 )
 
 
-@router.post(
-    "/",
-    response_model=EmployeeResponse
-)
+@router.post("/")
 def create_employee(
-        employee: EmployeeCreate,
-        db: Session = Depends(get_db)
+    employee: EmployeeCreate,
+    db: Session = Depends(get_db),
+    current_user=Depends(admin_required)
 ):
     db_employee = Employee(
         **employee.model_dump()

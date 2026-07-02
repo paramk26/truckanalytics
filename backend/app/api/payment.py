@@ -9,7 +9,7 @@ from app.schemas.payment import (
     PaymentCreate,
     PaymentResponse
 )
-
+from app.auth.dependencies import admin_required
 router = APIRouter(
     prefix="/payments",
     tags=["Payments"]
@@ -22,7 +22,8 @@ router = APIRouter(
 )
 def create_payment(
     payment: PaymentCreate,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user=Depends(admin_required)
 ):
     db_payment = Payment(
         **payment.model_dump()

@@ -10,6 +10,8 @@ from app.schemas.maintenance import (
     MaintenanceResponse
 )
 
+from app.auth.dependencies import admin_required
+
 router = APIRouter(
     prefix="/maintenance",
     tags=["Maintenance"]
@@ -22,7 +24,8 @@ router = APIRouter(
 )
 def create_maintenance(
         maintenance: MaintenanceCreate,
-        db: Session = Depends(get_db)
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
 ):
     db_maintenance = Maintenance(
         **maintenance.model_dump()
