@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="frontend initialized">
+    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="shadcn added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sws-frontend/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/src/lib/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/src/lib/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783000687438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="shadcn added">
+      <option name="closed" value="true" />
+      <created>1783071705225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783071705225</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +207,7 @@
     <MESSAGE value="authentication lock added to POST and GET of different methods" />
     <MESSAGE value="backend is now mature enough that starting the frontend is the right move." />
     <MESSAGE value="frontend initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend initialized" />
+    <MESSAGE value="shadcn added" />
+    <option name="LAST_COMMIT_MESSAGE" value="shadcn added" />
   </component>
 </project>
