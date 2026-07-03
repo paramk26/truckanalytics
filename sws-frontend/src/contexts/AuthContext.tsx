@@ -7,8 +7,18 @@ import {
   ReactNode,
 } from "react";
 
+type AuthUser = {
+  username: string;
+  role: string;
+};
+
+type LoginResponse = {
+  access_token: string;
+  role: string;
+};
+
 interface AuthContextType {
-  user: any;
+  user: AuthUser | null;
   login: (
     username: string,
     password: string
@@ -25,7 +35,7 @@ export function AuthProvider({
 }: {
   children: ReactNode;
 }) {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<AuthUser | null>(null);
 
   const login = async (
     username: string,
@@ -46,7 +56,11 @@ export function AuthProvider({
       }
     );
 
-    const data = await response.json();
+    if (!response.ok) {
+      throw new Error("Invalid credentials");
+    }
+
+    const data = (await response.json()) as LoginResponse;
 
     localStorage.setItem(
       "token",

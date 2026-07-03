@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="connectivity" />
+    <list default="true" id="8ce4ada9-4bb2-44fb-9af2-cc8b1d4e6a11" name="Changes" comment="connectivity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/customer_rate.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/customer_rate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/delivery.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/delivery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/expense.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/expense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/invoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/invoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/maintenance.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/maintenance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/payment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/api/tanker.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/api/tanker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/src/app/dashboard/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/src/contexts/AuthContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/src/contexts/AuthContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sws-frontend/src/hooks/use-mobile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sws-frontend/src/hooks/use-mobile.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

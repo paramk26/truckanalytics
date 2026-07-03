@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database.dependencies import get_db
@@ -53,8 +53,56 @@ def get_employee(
         employee_id: int,
         db: Session = Depends(get_db)
 ):
-    return db.query(
+    employee = db.query(
         Employee
     ).filter(
         Employee.id == employee_id
     ).first()
+
+    if not employee:
+        raise HTTPException(status_code=404, detail="Employee not found")
+
+    return employee
+
+
+@router.put(
+    "/{employee_id}",
+    response_model=EmployeeResponse
+)
+def update_employee(
+        employee_id: int,
+        employee: EmployeeCreate,
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
+):
+    db_employee = db.query(Employee).filter(Employee.id == employee_id).first()
+
+    if not db_employee:
+        raise HTTPException(status_code=404, detail="Employee not found")
+
+    for key, value in employee.model_dump().items():
+        setattr(db_employee, key, value)
+
+    db.commit()
+    db.refresh(db_employee)
+
+    return db_employee
+
+
+@router.delete(
+    "/{employee_id}"
+)
+def delete_employee(
+        employee_id: int,
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
+):
+    db_employee = db.query(Employee).filter(Employee.id == employee_id).first()
+
+    if not db_employee:
+        raise HTTPException(status_code=404, detail="Employee not found")
+
+    db.delete(db_employee)
+    db.commit()
+
+    return {"message": "Employee deleted successfully"}

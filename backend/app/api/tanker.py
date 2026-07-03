@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database.dependencies import get_db
@@ -52,8 +52,56 @@ def get_tanker(
         tanker_id: int,
         db: Session = Depends(get_db)
 ):
-    return db.query(
+    tanker = db.query(
         Tanker
     ).filter(
         Tanker.id == tanker_id
     ).first()
+
+    if not tanker:
+        raise HTTPException(status_code=404, detail="Tanker not found")
+
+    return tanker
+
+
+@router.put(
+    "/{tanker_id}",
+    response_model=TankerResponse
+)
+def update_tanker(
+        tanker_id: int,
+        tanker: TankerCreate,
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
+):
+    db_tanker = db.query(Tanker).filter(Tanker.id == tanker_id).first()
+
+    if not db_tanker:
+        raise HTTPException(status_code=404, detail="Tanker not found")
+
+    for key, value in tanker.model_dump().items():
+        setattr(db_tanker, key, value)
+
+    db.commit()
+    db.refresh(db_tanker)
+
+    return db_tanker
+
+
+@router.delete(
+    "/{tanker_id}"
+)
+def delete_tanker(
+        tanker_id: int,
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
+):
+    db_tanker = db.query(Tanker).filter(Tanker.id == tanker_id).first()
+
+    if not db_tanker:
+        raise HTTPException(status_code=404, detail="Tanker not found")
+
+    db.delete(db_tanker)
+    db.commit()
+
+    return {"message": "Tanker deleted successfully"}

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database.dependencies import get_db
@@ -57,8 +57,56 @@ def get_delivery(
         delivery_id: int,
         db: Session = Depends(get_db)
 ):
-    return db.query(
+    delivery = db.query(
         Delivery
     ).filter(
         Delivery.id == delivery_id
     ).first()
+
+    if not delivery:
+        raise HTTPException(status_code=404, detail="Delivery not found")
+
+    return delivery
+
+
+@router.put(
+    "/{delivery_id}",
+    response_model=DeliveryResponse
+)
+def update_delivery(
+        delivery_id: int,
+        delivery: DeliveryCreate,
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
+):
+    db_delivery = db.query(Delivery).filter(Delivery.id == delivery_id).first()
+
+    if not db_delivery:
+        raise HTTPException(status_code=404, detail="Delivery not found")
+
+    for key, value in delivery.model_dump().items():
+        setattr(db_delivery, key, value)
+
+    db.commit()
+    db.refresh(db_delivery)
+
+    return db_delivery
+
+
+@router.delete(
+    "/{delivery_id}"
+)
+def delete_delivery(
+        delivery_id: int,
+        db: Session = Depends(get_db),
+        current_user=Depends(admin_required)
+):
+    db_delivery = db.query(Delivery).filter(Delivery.id == delivery_id).first()
+
+    if not db_delivery:
+        raise HTTPException(status_code=404, detail="Delivery not found")
+
+    db.delete(db_delivery)
+    db.commit()
+
+    return {"message": "Delivery deleted successfully"}
