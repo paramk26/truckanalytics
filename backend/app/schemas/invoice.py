@@ -29,3 +29,8 @@ class InvoiceResponse(InvoiceCreate):
 
     class Config:
         from_attributes = True
+
+class InvoiceGenerateRequest(BaseModel):
+    customer_id: int
+    start_date: date
+    end_date: date
